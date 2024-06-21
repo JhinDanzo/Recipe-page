@@ -26,8 +26,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 98vw;
+    align-items: center;   
+    padding: 20px; 
 }
 
 h1, h2{
@@ -58,7 +58,7 @@ li::before{
 
 main{
     width: 375px;
-    height: 2043px;
+    height: 1980px;
     background-color: var(--white);
 }
 
@@ -143,7 +143,64 @@ main{
     position: absolute; 
     left: 0; 
     color: var(--brandy-red);
+    font-weight: bold;
 }
 
+.nutrition{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--wenge-brown);
+}
+
+.grid-item-nutrition{
+    border-bottom: 1px solid var(--white-coffe);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.grid-item-nutrition-last{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.calories{
+    color: var(--brandy-red);
+}
+
+
+@media only screen and (min-width:768px){
+    main{
+        width: 736px;
+        height: 1708px;
+        padding: 40px;
+        border-radius: 24px ; 
+    }
+
+    .content-container{
+        margin-top: 40px;
+        padding:0;
+    }
+
+    .main-photo{
+        width: 656px;
+        height: 300px;
+        border-radius: 12px;
+    }
+
+    .recipe-name{
+        font-size: 40px;
+    }
+
+    .preparation-container{
+        width: 656px;
+        height: 180px;
+        padding: 28px;
+    }
+    
+}
 
 
