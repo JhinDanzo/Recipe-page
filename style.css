@@ -1,0 +1,149 @@
+:root{
+    --eggshell: #F3E5D7;
+    --white: #FFFFFF;
+    --dark-chocolate: #312E2C;
+    --wenge-brown: #5F564D;
+    --dark-raspberry: #7A284E;
+    --brandy-red: #854632;
+    --rose: #FFF7FB;
+    --white-coffe: #E3DDD7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit, serif;
+    font-weight: 300;
+}
+
+b{
+    font-weight: bold;
+}
+
+body{
+    background-color: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+}
+
+h1, h2{
+    font-family: Young Serif, serif;
+    font-weight: normal;
+    line-height: 100%;
+}
+ul{
+    list-style-position: outside;
+    list-style: none;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 8px;
+}
+
+li{
+    color: var(--wenge-brown);
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 8px;
+}
+
+li::before{
+    content: '•'; 
+    position: absolute; 
+    left: 0; 
+}
+
+main{
+    width: 375px;
+    height: 2043px;
+    background-color: var(--white);
+}
+
+.line{
+    border: 1px solid var(--white-coffe);
+    margin-bottom: 32px;
+}
+
+.content-container{
+    padding:40px 32px 40px 32px ; 
+}
+
+.main-photo{
+    width: 375px;
+    height: 171px;
+}
+
+.recipe-name{
+    color: var(--dark-chocolate);
+    line-height: 100%;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.main-text{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--wenge-brown);
+    margin-bottom: 32px;
+}
+
+.preparation-container{
+    width: 311px;
+    height: 196px;
+    border-radius: 12px;
+    background-color: var(--rose);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.preparation-title{
+    color: var(--dark-raspberry);
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ingridients{
+    margin-bottom: 32px;
+}
+
+.list-element-preparation::before{
+    color: var(--dark-raspberry);
+}
+
+.sections{
+    font-size: 28px;
+    color: var(--brandy-red);
+    margin-bottom: 24px;
+}
+
+.list-element-ingridients::before{
+    color: var(--brandy-red);
+}
+
+.instruction{
+    list-style: none; 
+    padding-left: 0;
+    margin-left: 8px;
+    margin-bottom: 32px;
+}
+
+.list-element-instruction{
+    position: relative;
+    padding-left: 30px;
+}
+
+.list-element-instruction::before{
+    content: counter(list-item) "."; 
+    counter-increment: 1;
+    position: absolute; 
+    left: 0; 
+    color: var(--brandy-red);
+}
+
+
+
